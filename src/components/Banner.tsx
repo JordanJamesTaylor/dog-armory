@@ -13,6 +13,7 @@ const theme = createTheme({
 const Banner = () => {
     return (
         <ThemeProvider theme={theme}>
+        <section>
             <div
                 style={{
                     position: 'absolute',
@@ -20,7 +21,7 @@ const Banner = () => {
                     flexDirection: 'column',
                     alignItems: 'center',
                     width: '100%',
-                    marginTop: '25%',
+                    marginTop: '20%',
                     fontFamily: 'Heebo',
                     fontSize: '2.5rem',
                     color: 'white',
@@ -34,8 +35,9 @@ const Banner = () => {
                     variant='contained'
                     color={'primary'}
                     sx={{
+                        marginTop: '2rem',
                         padding: '1rem',
-                        width: '33%',
+                        width: '15%',
                         borderRadius: '25px',
                         bgColor: 'primary.main'
                     }}
@@ -47,13 +49,14 @@ const Banner = () => {
                 src="/combat-dogs/banner-dog2.jpg" 
                 alt="Dog in combat gear" 
                 style={{
-                    position: 'absolute',
+                    position: 'relative',
                     display: 'flex',
                     height: '100vh',
                     width: '100%',
                     zIndex: '0'   
                 }}    
             />
+        </section>
         </ThemeProvider>
     )
 };
